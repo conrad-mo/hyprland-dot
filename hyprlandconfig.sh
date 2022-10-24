@@ -18,6 +18,12 @@ paru hyprpaper
 paru network-manager-applet
 paru cpupower
 
-mv hypr/hyprland.conf ~/.config/hypr/hyprland.conf
+echo "Moving dot files"
+mv hypr/ ~/.config/hypr/
+mv romb.png ~/Pictures
+mv alacritty ~/.config/alacritty
+mv gtklock ~/.config/gtklock
+my waybar ~/.config/waybar
+my wofi ~/.config/wofi
 
 exit
