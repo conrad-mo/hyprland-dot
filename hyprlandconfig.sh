@@ -23,7 +23,8 @@ mv hypr/ ~/.config/hypr/
 mv romb.png ~/Pictures
 mv alacritty ~/.config/alacritty
 mv gtklock ~/.config/gtklock
-my waybar ~/.config/waybar
-my wofi ~/.config/wofi
+mv waybar ~/.config/waybar
+mv wofi ~/.config/wofi
+mv cava ~/.config/cava
 
 exit
