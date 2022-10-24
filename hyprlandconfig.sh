@@ -16,7 +16,6 @@ paru webcord
 paru visual-studio-code-bin
 paru hyprpaper
 paru network-manager-applet
-paru rofi-lbonn-wayland-git
 paru cpupower
 
 mv hypr/hyprland.conf ~/.config/hypr/hyprland.conf

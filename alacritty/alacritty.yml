@@ -1,0 +1,6 @@
+import:
+  # uncomment the flavour you want below:
+  - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
+font:
+  normal:
+    family: "MesloLGS NF"
