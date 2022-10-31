@@ -9,13 +9,13 @@ webcord visual-studio-code-bin hyprpaper-git network-manager-applet cpupower gri
 blueman pfetch unimatrix-git pipes.sh --noconfirm
 
 echo "Moving dot files"
-cp hypr/ ~/.config/hypr/
+cp -r hypr/ ~/.config/hypr/
 cp romb.png ~/Pictures
-cp alacritty ~/.config/alacritty
-cp gtklock ~/.config/gtklock
-cp waybar ~/.config/waybar
-cp wofi ~/.config/wofi
-cp cava ~/.config/cava
+cp -r alacritty ~/.config/alacritty
+cp -r gtklock ~/.config/gtklock
+cp -r waybar ~/.config/waybar
+cp -r wofi ~/.config/wofi
+cp -r cava ~/.config/cava
 gsettings set org.cinnamon.desktop.default-applications.terminal exec alacritty
 
 exit
