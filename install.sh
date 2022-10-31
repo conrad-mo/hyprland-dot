@@ -4,9 +4,9 @@ echo "Updating system packages"
 pacman -Syu --noconfirm
 pacman -S --needed base-devel --noconfirm
 
-yay -S paru brightnessctl okular waybar-hyprland-git nautilus bitwarden-desktop spotify spotify-adblock-git \
+yay -S paru brightnessctl okular waybar-hyprland-git nemo bitwarden-desktop spotify spotify-adblock-git \
 webcord visual-studio-code-bin hyprpaper network-manager-applet cpupower grim-git slurp gtklock wofi alacritty \
-blueman --noconfirm
+blueman pfetch unimatrix pipes.sh --noconfirm
 
 echo "Moving dot files"
 mv hypr/ ~/.config/hypr/
