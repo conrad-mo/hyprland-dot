@@ -4,7 +4,7 @@ echo "Updating system packages"
 pacman -Syu --noconfirm
 pacman -S --needed base-devel --noconfirm
 
-yay -S paru brightnessctl okular waybar-hyprland-git nemo bitwarden spotify spotify-adblock-git \
+yay -S catch2-git paru brightnessctl okular waybar-hyprland-git nemo bitwarden spotify spotify-adblock-git \
 webcord visual-studio-code-bin hyprpaper-git network-manager-applet cpupower grim-git slurp gtklock wofi alacritty \
 blueman pfetch unimatrix-git pipes.sh --noconfirm
 
