@@ -16,5 +16,6 @@ mv gtklock ~/.config/gtklock
 mv waybar ~/.config/waybar
 mv wofi ~/.config/wofi
 mv cava ~/.config/cava
+gsettings set org.cinnamon.desktop.default-applications.terminal exec alacritty
 
 exit
