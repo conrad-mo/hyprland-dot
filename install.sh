@@ -41,7 +41,7 @@ sudo cp -r sddm.conf.d /etc/
 echo "Cloning SDDM theme"
 git clone https://github.com/catppuccin/sddm.git
 echo "Moving SDDM theme"
-cp -r sddm/src/catppuccin-mocha /usr/share/sddm/themes
+sudo cp -r sddm/src/catppuccin-mocha /usr/share/sddm/themes
 echo "Creating symlinks for SDDM"
 sudo systemctl enable sddm.service
 
