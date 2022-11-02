@@ -6,7 +6,7 @@ sudo pacman -S --needed base-devel --noconfirm
 
 yay -S catch2-git paru brightnessctl okular waybar-hyprland-git nemo bitwarden spotify spotify-adblock-git \
 webcord visual-studio-code-bin hyprpaper-git network-manager-applet cpupower grim-git slurp gtklock wofi alacritty \
-blueman pfetch unimatrix-git pipes.sh spicetify-cli --noconfirm
+blueman pfetch unimatrix-git pipes.sh spicetify-cli catppuccin-gtk-theme-mocha --noconfirm
 
 echo "Moving dot files"
 cp -r hypr/ ~/.config
