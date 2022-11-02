@@ -11,6 +11,7 @@ blueman pfetch unimatrix-git pipes.sh spicetify-cli --noconfirm
 echo "Moving dot files"
 cp -r hypr/ ~/.config
 cp romb.png ~/Pictures
+git clone https://github.com/catppuccin/alacritty.git ~/.config/alacritty/catppuccin
 cp -r alacritty ~/.config
 cp -r gtklock ~/.config
 cp -r waybar ~/.config
