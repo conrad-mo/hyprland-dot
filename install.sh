@@ -17,10 +17,10 @@ cp wrappedh1.desktop ~/.local/bin/
 cp wrappedh1.desktop /usr/share/wayland-sessions/
 echo "Setting background photo"
 cp romb.png ~/Pictures
-echo "Cloning alacritty catppuccin theme"
-git clone https://github.com/catppuccin/alacritty.git ~/.config/alacritty/catppuccin
 echo "Moving alacritty dots"
 cp -r alacritty ~/.config
+echo "Cloning alacritty catppuccin theme"
+git clone https://github.com/catppuccin/alacritty.git ~/.config/alacritty/catppuccin
 echo "Moving gtklock dots"
 cp -r gtklock ~/.config
 echo "Moving waybar dots"
