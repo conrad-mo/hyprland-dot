@@ -5,9 +5,9 @@ sudo pacman -Syu --noconfirm
 sudo pacman -S --needed base-devel --noconfirm
 
 echo "Grabbing packages via yay"
-yay -S catch2-git paru brightnessctl okular waybar-hyprland-git nemo nemo-fileroller nemo-preview nemo-image-converter bitwarden spotify spotify-adblock-git \
+yay -S catch2-git paru brightnessctl waybar-hyprland-git nemo nemo-fileroller nemo-preview nemo-image-converter bitwarden spotify spotify-adblock-git \
 webcord visual-studio-code-bin hyprpaper-git network-manager-applet auto-cpufreq grim-git slurp gtklock wofi alacritty \
-blueman pfetch unimatrix-git pipes.sh spicetify-cli catppuccin-gtk-theme-mocha sddm-git zsh-autosuggestions zsh-syntax-highlighting-git --noconfirm
+blueman pfetch unimatrix-git pipes.sh spicetify-cli catppuccin-gtk-theme-mocha sddm-git zsh-autosuggestions zsh-syntax-highlighting-git xreader xed --noconfirm
 
 echo "Moving dot files"
 echo "Moving hyprland dots"
