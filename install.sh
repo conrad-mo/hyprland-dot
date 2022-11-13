@@ -6,7 +6,7 @@ sudo pacman -S --needed base-devel --noconfirm
 
 echo "Grabbing packages via yay"
 yay -S catch2-git paru brightnessctl okular waybar-hyprland-git nemo nemo-fileroller nemo-preview nemo-image-converter bitwarden spotify spotify-adblock-git \
-webcord visual-studio-code-bin hyprpaper-git network-manager-applet cpupower grim-git slurp gtklock wofi alacritty \
+webcord visual-studio-code-bin hyprpaper-git network-manager-applet auto-cpufreq grim-git slurp gtklock wofi alacritty \
 blueman pfetch unimatrix-git pipes.sh spicetify-cli catppuccin-gtk-theme-mocha sddm-git --noconfirm
 
 echo "Moving dot files"
@@ -19,8 +19,6 @@ echo "Setting background photo"
 cp romb.png ~/Pictures
 echo "Moving alacritty dots"
 cp -r alacritty ~/.config
-echo "Cloning alacritty catppuccin theme"
-git clone https://github.com/catppuccin/alacritty.git ~/.config/alacritty/catppuccin
 echo "Moving gtklock dots"
 cp -r gtklock ~/.config
 echo "Moving waybar dots"
@@ -44,5 +42,7 @@ echo "Moving SDDM theme"
 sudo cp -r sddm/src/catppuccin-mocha /usr/share/sddm/themes
 echo "Creating symlinks for SDDM"
 sudo systemctl enable sddm.service
+echo "Enabling auto-cpufreq
+sudo systemctl enable auto-cpufreq"
 
 exit
