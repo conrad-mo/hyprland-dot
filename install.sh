@@ -7,7 +7,7 @@ sudo pacman -S --needed base-devel --noconfirm
 echo "Grabbing packages via yay"
 yay -S catch2-git paru brightnessctl okular waybar-hyprland-git nemo nemo-fileroller nemo-preview nemo-image-converter bitwarden spotify spotify-adblock-git \
 webcord visual-studio-code-bin hyprpaper-git network-manager-applet auto-cpufreq grim-git slurp gtklock wofi alacritty \
-blueman pfetch unimatrix-git pipes.sh spicetify-cli catppuccin-gtk-theme-mocha sddm-git --noconfirm
+blueman pfetch unimatrix-git pipes.sh spicetify-cli catppuccin-gtk-theme-mocha sddm-git zsh-autosuggestions zsh-syntax-highlighting-git --noconfirm
 
 echo "Moving dot files"
 echo "Moving hyprland dots"
@@ -44,5 +44,9 @@ echo "Creating symlinks for SDDM"
 sudo systemctl enable sddm.service
 echo "Enabling auto-cpufreq
 sudo systemctl enable auto-cpufreq"
+echo "Adding zsh syntax highlighting to path"
+echo "source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+echo "Adding zsh autocomplete to path"
+echo "source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 
 exit
