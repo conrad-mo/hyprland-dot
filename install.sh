@@ -43,7 +43,7 @@ sudo cp -r sddm/src/catppuccin-mocha /usr/share/sddm/themes
 echo "Creating symlinks for SDDM"
 sudo systemctl enable sddm.service
 echo "Enabling auto-cpufreq"
-sudo systemctl enable auto-cpufreq"
+sudo systemctl enable auto-cpufreq
 echo "Adding zsh syntax highlighting to path"
 echo "source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 echo "Adding zsh autocomplete to path"
