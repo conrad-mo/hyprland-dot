@@ -35,6 +35,8 @@ git clone https://github.com/catppuccin/grub.git
 sudo cp -r grub/src/* /usr/share/grub/themes/
 sudo cp grub-config/grub /etc/default/
 sudo grub-mkconfig -o /boot/grub/grub.cfg
+echo "Removing catppuccin grub repo"
+rm -rf grub
 echo "Moving SDDM dots"
 sudo cp -r sddm.conf.d /etc/
 echo "Cloning SDDM theme"
@@ -43,11 +45,14 @@ echo "Moving SDDM theme"
 sudo cp -r sddm/src/catppuccin-mocha /usr/share/sddm/themes
 echo "Creating symlinks for SDDM"
 sudo systemctl enable sddm.service
+echo "Removing sddm catppuccin"
+rm -rf sddm
 echo "Enabling auto-cpufreq"
 sudo systemctl enable auto-cpufreq
-echo "Adding zsh syntax highlighting to path"
-echo "source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
-echo "Adding zsh autocomplete to path"
-echo "source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+echo "Installing catppuccin zsh syntax highlighting"
+git clone https://github.com/catppuccin/zsh-syntax-highlighting.git
+cp -v zsh-syntax-highlighting/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh ~/.zsh/
+echo "Removing zsh syntax theme"
+rm -rf zsh-syntax-highlighting
 
 exit
