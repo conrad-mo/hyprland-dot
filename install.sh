@@ -17,7 +17,7 @@ echo "Moving wrappedh1.desktop"
 cp wrappedh1.desktop ~/.local/bin/
 cp wrappedh1.desktop /usr/share/wayland-sessions/
 echo "Setting background photo"
-cp romb.png ~/Pictures
+cp bgwallpaper.png ~/Pictures
 echo "Moving alacritty dots"
 cp -r alacritty ~/.config
 echo "Moving gtklock dots"
@@ -28,7 +28,7 @@ echo "Moving wofi dots"
 cp -r wofi ~/.config
 echo "Moving cava dots"
 cp -r cava ~/.config
-echo "Set default termianl to alacritty"
+echo "Set default terminal to alacritty"
 gsettings set org.cinnamon.desktop.default-applications.terminal exec alacritty
 echo "Setting grub theme"
 git clone https://github.com/catppuccin/grub.git
