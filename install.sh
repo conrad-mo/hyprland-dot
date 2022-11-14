@@ -8,7 +8,7 @@ echo "Grabbing packages via yay"
 yay -S catch2-git paru brightnessctl waybar-hyprland-git nemo nemo-fileroller nemo-preview nemo-image-converter bitwarden spotify spotify-adblock-git \
 webcord visual-studio-code-bin hyprpaper-git network-manager-applet auto-cpufreq grim-git slurp gtklock wofi alacritty \
 blueman pfetch unimatrix-git pipes.sh spicetify-cli catppuccin-gtk-theme-mocha sddm-git zsh-autosuggestions zsh-syntax-highlighting-git xreader xed \
-xviewer xplayer spotifywm-git --noconfirm
+xviewer xplayer xdg-desktop-portal-wlr spotifywm-git --noconfirm
 
 echo "Moving dot files"
 echo "Moving hyprland dots"
