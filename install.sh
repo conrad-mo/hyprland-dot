@@ -52,7 +52,11 @@ sudo systemctl enable auto-cpufreq
 echo "Installing catppuccin zsh syntax highlighting"
 git clone https://github.com/catppuccin/zsh-syntax-highlighting.git
 cp -v zsh-syntax-highlighting/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh ~/.zsh/
-echo "Removing zsh syntax theme"
+echo "Removing zsh syntax theme".config/alacritty/catppuccin
 rm -rf zsh-syntax-highlighting
+echo "Getting spotifywm"
+git clone https://github.com/amurzeau/spotifywm.git ~/GitHub/spotifywm
+echo "Building spotifywm"
+make -C ~/Github/spotifywm
 
 exit
