@@ -18,6 +18,7 @@ cp wrappedh1.desktop ~/.local/bin/
 cp wrappedh1.desktop /usr/share/wayland-sessions/
 echo "Setting background photo"
 cp bgwallpaper.png ~/Pictures
+cp romb.png ~/Pictures
 echo "Moving alacritty dots"
 cp -r alacritty ~/.config
 echo "Moving gtklock dots"
@@ -58,5 +59,6 @@ echo "Getting spotifywm"
 git clone https://github.com/amurzeau/spotifywm.git ~/GitHub/spotifywm
 echo "Building spotifywm"
 make -C ~/Github/spotifywm
+echo "Done script"
 
 exit
