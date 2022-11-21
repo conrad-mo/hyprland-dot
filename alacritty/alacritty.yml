@@ -1,6 +1,40 @@
 import:
   # uncomment the flavour you want below:
   - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
+window:
+  # Window padding (changes require restart)
+  #
+  # Blank space added around the window in pixels. This padding is scaled
+  # by DPI and the specified value is always added at both opposing sides.
+  padding:
+    x: 24
+    y: 24
+  decorations: none
+  dimensions:
+    columns: 80
+    lines: 35
+  #opacity: 0.8
 font:
   normal:
     family: "FiraCode Nerd Font Mono"
+    style: Regular
+  bold:
+    # Font family
+    #
+    # If the bold family is not specified, it will fall back to the
+    # value specified for the normal font.
+    family: 'FiraCode Nerd Font'
+
+    # The `style` can be specified to pick a specific face.
+    style: Bold
+
+  # Italic font face
+  italic:
+    # Font family
+    #
+    # If the italic family is not specified, it will fall back to the
+    # value specified for the normal font.
+    family: 'FiraCode Nerd Font'
+
+    # The `style` can be specified to pick a specific face.
+    style: Italic

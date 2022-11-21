@@ -62,6 +62,8 @@ echo "Getting spotifywm"
 git clone https://github.com/amurzeau/spotifywm.git ~/GitHub/spotifywm
 echo "Building spotifywm"
 make -C ~/Github/spotifywm
+echo "Moving starship config"
+cp starship.toml ~/.config/
 echo "Done script"
 
 exit
