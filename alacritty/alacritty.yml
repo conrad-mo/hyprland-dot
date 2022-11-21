@@ -3,4 +3,4 @@ import:
   - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
 font:
   normal:
-    family: "MesloLGS NF"
+    family: "FiraCode Nerd Font Mono"

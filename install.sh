@@ -8,8 +8,8 @@ echo "Grabbing packages via yay"
 yay -S catch2-git paru zsh brightnessctl waybar-hyprland-git nemo nemo-fileroller nemo-preview nemo-image-converter bitwarden spotify spotify-adblock-git \
 spotify-remove-ad-banner webcord visual-studio-code-bin hyprpaper-git network-manager-applet auto-cpufreq grim-git slurp gtklock wofi alacritty \
 blueman pfetch unimatrix-git pipes.sh spicetify-cli catppuccin-gtk-theme-mocha sddm-git zsh-autosuggestions zsh-syntax-highlighting-git xreader xed \
-xviewer xplayer xdg-desktop-portal-wlr ttf-ubuntumono-nerd ttf-dejavu ttf-bitstream-vera noto-fonts cantarell-fonts ttf-meslo-nerd-font-powerlevel10k \
-zsh-theme-powerlevel10k-git --noconfirm
+xviewer xplayer xdg-desktop-portal-wlr ttf-ubuntumono-nerd ttf-dejavu ttf-bitstream-vera noto-fonts cantarell-fonts \
+otf-font-awesome starship ttf-firacode-nerd --noconfirm
 
 echo "Switching from bash to zsh"
 chsh -s /usr/bin/zsh
