@@ -5,7 +5,7 @@ sudo pacman -Syu --noconfirm
 sudo pacman -S --needed base-devel --noconfirm
 
 echo "Grabbing packages via yay"
-yay -S catch2-git paru zsh brightnessctl waybar-hyprland-git nemo nemo-fileroller nemo-preview nemo-image-converter bitwarden spotify spotify-adblock-git \
+yay -S catch2-git socat paru zsh brightnessctl waybar-hyprland-git nemo nemo-fileroller nemo-preview nemo-image-converter bitwarden spotify spotify-adblock-git \
 spotify-remove-ad-banner webcord visual-studio-code-bin hyprpaper-git network-manager-applet auto-cpufreq grim-git slurp gtklock wofi alacritty \
 blueman pfetch unimatrix-git pipes.sh spicetify-cli catppuccin-gtk-theme-mocha sddm-git zsh-autosuggestions zsh-syntax-highlighting-git xreader xed \
 xviewer xplayer xdg-desktop-portal-wlr ttf-ubuntumono-nerd ttf-dejavu ttf-bitstream-vera noto-fonts cantarell-fonts \
@@ -14,25 +14,28 @@ otf-font-awesome starship ttf-firacode-nerd mpvpaper --noconfirm
 echo "Switching from bash to zsh"
 chsh -s /usr/bin/zsh
 echo "Moving dot files"
+echo "Making github folder"
+mkdir ~/GitHub
 echo "Moving hyprland dots"
-cp -r hypr/ ~/.config
+chmod +x hypr/scripts/mpvpapersave.sh
+cp -r hypr ~/.config/
 echo "Moving wrappedh1.desktop"
 cp wrappedh1.desktop ~/.local/bin/
 cp wrappedh1.desktop /usr/share/wayland-sessions/
 echo "Setting background photo"
-cp bgwallpaper.png ~/Pictures
-cp romb.png ~/Pictures
-cp nightstudyrom.mp4 ~/Videos
+cp bgwallpaper.png ~/Pictures/
+cp romb.png ~/Pictures/
+cp nightstudyrom.mp4 ~/Videos/
 echo "Moving alacritty dots"
-cp -r alacritty ~/.config
+cp -r alacritty ~/.config/
 echo "Moving gtklock dots"
-cp -r gtklock ~/.config
+cp -r gtklock ~/.config/
 echo "Moving waybar dots"
-cp -r waybar ~/.config
+cp -r waybar ~/.config/
 echo "Moving wofi dots"
-cp -r wofi ~/.config
+cp -r wofi ~/.config/
 echo "Moving cava dots"
-cp -r cava ~/.config
+cp -r cava ~/.config/
 echo "Set default terminal to alacritty"
 gsettings set org.cinnamon.desktop.default-applications.terminal exec alacritty
 echo "Setting grub theme"
@@ -47,7 +50,7 @@ sudo cp -r sddm.conf.d /etc/
 echo "Cloning SDDM theme"
 git clone https://github.com/catppuccin/sddm.git
 echo "Moving SDDM theme"
-sudo cp -r sddm/src/catppuccin-mocha /usr/share/sddm/themes
+sudo cp -r sddm/src/catppuccin-mocha /usr/share/sddm/themes/
 echo "Creating symlinks for SDDM"
 sudo systemctl enable sddm.service
 echo "Removing sddm catppuccin"
