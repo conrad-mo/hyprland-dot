@@ -2,7 +2,7 @@
 
 MPV_SOCKET_PATH="/tmp/mpv-socket"
 
-mpvpaper -o "input-ipc-server=$MPV_SOCKET_PATH no-audio --loop" '*' ~/Videos/mylivewallpapers-com-Night-Study-Room.mp4 &
+mpvpaper -o "input-ipc-server=$MPV_SOCKET_PATH no-audio --loop" '*' ~/Videos/nightstudyroom4k.mp4 &
 
 while pidof mpvpaper >/dev/null; do
 	bat_state=$(upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep state | awk '{print $2}')
