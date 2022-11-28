@@ -53,8 +53,8 @@ echo "Moving SDDM theme"
 sudo cp -r sddm/src/catppuccin-mocha /usr/share/sddm/themes/
 echo "Creating symlinks for SDDM"
 sudo systemctl enable sddm.service
-#echo "Changing sddm resolution"
-#sudo cp 10-monitor.conf /etc/X11/xorg.conf.d/
+echo "Changing sddm resolution"
+sudo cp 10-monitor.conf /etc/X11/xorg.conf.d/
 echo "Removing sddm catppuccin"
 rm -rf sddm
 echo "Enabling auto-cpufreq"
