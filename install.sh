@@ -47,6 +47,8 @@ echo "Removing catppuccin grub repo"
 rm -rf grub
 echo "Moving SDDM dots"
 sudo cp -r sddm.conf.d /etc/
+echo "Adding sddm resolution change"
+xrandr --output eDP-1 --mode 1920x1080
 echo "Cloning SDDM theme"
 git clone https://github.com/catppuccin/sddm.git
 echo "Moving SDDM theme"
