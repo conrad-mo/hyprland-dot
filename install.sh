@@ -70,6 +70,8 @@ echo "Building spotifywm"
 make -C ~/Github/spotifywm
 echo "Moving starship config"
 cp starship.toml ~/.config/
+echo "Move vscode wayland flags"
+cp code-flags.conf ~/.config/
 echo "Done script"
 
 exit
