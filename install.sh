@@ -75,6 +75,9 @@ echo "Move vscode wayland flags"
 cp code-flags.conf ~/.config/
 echo "Move wlogout config"
 cp -r wlogout ~/.config/
+echo "Grabbing catppuccin zsh syntax highlighting"
+git clone https://github.com/catppuccin/zsh-syntax-highlighting.git
+cp -v zsh-syntax-highlighting/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh ~/.zsh/
 echo "Done script"
 
 exit
