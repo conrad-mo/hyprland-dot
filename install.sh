@@ -5,13 +5,13 @@ sudo pacman -Syu --noconfirm
 sudo pacman -S --needed base-devel --noconfirm
 
 echo "Grabbing packages via yay"
-yay -S catch2-git socat paru zsh brightnessctl waybar-hyprland-git nemo nemo-fileroller nemo-preview nemo-image-converter bitwarden spotify spotify-adblock-git \
-spotify-remove-ad-banner webcord visual-studio-code-bin hyprpaper-git network-manager-applet auto-cpufreq grim-git slurp gtklock wofi alacritty \
+yay -S catch2-git socat paru zsh brightnessctl cava gnome-keyring waybar-hyprland-git nemo nemo-fileroller nemo-preview nemo-image-converter bitwarden \
+webcord visual-studio-code-bin hyprpaper-git network-manager-applet auto-cpufreq grim-git slurp gtklock wofi alacritty \
 blueman pfetch unimatrix-git pipes.sh spicetify-cli catppuccin-gtk-theme-mocha sddm-git zsh-autosuggestions zsh-syntax-highlighting-git xreader xed \
 xviewer xplayer xdg-desktop-portal-wlr ttf-ubuntumono-nerd ttf-dejavu ttf-bitstream-vera noto-fonts cantarell-fonts \
-otf-font-awesome starship ttf-firacode-nerd light ripgrep bc gojq blueberry --noconfirm
+otf-font-awesome starship ttf-firacode-nerd --noconfirm
 
-#optional iwgtk
+#optional iwgtk light ripgrep bc gojq blueberry
 
 echo "Switching from bash to zsh"
 chsh -s /usr/bin/zsh
@@ -19,7 +19,6 @@ echo "Moving dot files"
 echo "Making github folder"
 mkdir ~/GitHub
 echo "Moving hyprland dots"
-chmod +x hypr/scripts/mpvpapersave.sh
 cp -r hypr ~/.config/
 echo "Moving wrappedh1.desktop"
 cp wrappedh1.desktop ~/.local/bin/
@@ -55,8 +54,8 @@ echo "Moving SDDM theme"
 sudo cp -r sddm/src/catppuccin-mocha /usr/share/sddm/themes/
 echo "Creating symlinks for SDDM"
 sudo systemctl enable sddm.service
-echo "Changing sddm resolution"
-sudo cp 10-monitor.conf /etc/X11/xorg.conf.d/
+#echo "Changing sddm resolution"
+#sudo cp 10-monitor.conf /etc/X11/xorg.conf.d/
 echo "Removing sddm catppuccin"
 rm -rf sddm
 echo "Enabling auto-cpufreq"
@@ -74,6 +73,8 @@ echo "Moving starship config"
 cp starship.toml ~/.config/
 echo "Move vscode wayland flags"
 cp code-flags.conf ~/.config/
+echo "Move wlogout config"
+cp -r wlogout ~/.config/
 echo "Done script"
 
 exit

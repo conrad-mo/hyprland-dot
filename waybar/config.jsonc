@@ -92,7 +92,7 @@
   },
   "custom/power": {
     "format": "⏻",
-    "on-click": "adios --systemd"
+    "on-click": "wlogout"
   }
 }
 
