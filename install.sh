@@ -12,6 +12,7 @@ xviewer xplayer xdg-desktop-portal-wlr ttf-ubuntumono-nerd ttf-dejavu ttf-bitstr
 otf-font-awesome starship ttf-firacode-nerd --noconfirm
 
 #optional iwgtk light ripgrep bc gojq blueberry
+#spotify spotify-adblock spotify-remove-ad-banner
 
 echo "Switching from bash to zsh"
 chsh -s /usr/bin/zsh
@@ -78,6 +79,8 @@ cp -r wlogout ~/.config/
 echo "Grabbing catppuccin zsh syntax highlighting"
 git clone https://github.com/catppuccin/zsh-syntax-highlighting.git
 cp -v zsh-syntax-highlighting/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh ~/.zsh/
+echo "Changing gtk to dark mode"
+cp -r gtk-3.0 ~/.config/
 echo "Done script"
 
 exit
