@@ -53,15 +53,15 @@ echo "Cloning SDDM theme"
 git clone https://github.com/catppuccin/sddm.git
 echo "Moving SDDM theme"
 sudo cp -r sddm/src/catppuccin-mocha /usr/share/sddm/themes/
-echo "Creating symlinks for SDDM"
-sudo systemctl enable sddm.service
-#echo "Changing sddm resolution"
-#sudo cp 10-monitor.conf /etc/X11/xorg.conf.d/
+#echo "Creating symlinks for SDDM"
+#sudo systemctl enable sddm.service
+echo "Changing sddm resolution"
+sudo cp 10-monitor.conf /etc/X11/xorg.conf.d/
 echo "Removing sddm catppuccin"
 rm -rf sddm
-echo "Enabling auto-cpufreq"
-sudo systemctl enable auto-cpufreq
-sudo systemctl start auto-cpufreq
+#echo "Enabling auto-cpufreq"
+#sudo systemctl enable auto-cpufreq
+#sudo systemctl start auto-cpufreq
 echo "Installing catppuccin zsh syntax highlighting"
 git clone https://github.com/catppuccin/zsh-syntax-highlighting.git
 cp -v zsh-syntax-highlighting/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh ~/.zsh/
@@ -82,6 +82,7 @@ git clone https://github.com/catppuccin/zsh-syntax-highlighting.git
 cp -v zsh-syntax-highlighting/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh ~/.zsh/
 echo "Changing gtk to dark mode"
 cp -r gtk-3.0 ~/.config/
+echo "Don't forget to enable services for sddm and auto-cpufreq"
 echo "Done script"
 
 exit
