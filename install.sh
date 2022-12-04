@@ -6,8 +6,8 @@ sudo pacman -S --needed base-devel --noconfirm
 
 echo "Grabbing packages via yay"
 yay -S catch2-git socat paru zsh brightnessctl cava gnome-keyring waybar-hyprland-git nemo nemo-fileroller nemo-preview nemo-image-converter bitwarden \
-webcord visual-studio-code-bin hyprpaper-git network-manager-applet auto-cpufreq grim-git slurp gtklock wofi alacritty \
-blueman pfetch unimatrix-git pipes.sh spicetify-cli catppuccin-gtk-theme-mocha sddm-git zsh-autosuggestions zsh-syntax-highlighting-git xreader xed \
+webcord xed visual-studio-code-bin hyprpaper-git network-manager-applet auto-cpufreq grim-git slurp gtklock wofi alacritty \
+blueman pfetch unimatrix-git pipes.sh spicetify-cli catppuccin-gtk-theme-mocha sddm-git zsh-autosuggestions zsh-syntax-highlighting-git xreader \
 xviewer xplayer xdg-desktop-portal-wlr ttf-ubuntumono-nerd ttf-dejavu ttf-bitstream-vera noto-fonts cantarell-fonts \
 otf-font-awesome starship ttf-firacode-nerd wlogout github-cli --noconfirm
 
@@ -86,7 +86,10 @@ echo "Changing gtk to dark mode"
 cp -r gtk-3.0 ~/.config/
 echo "Moving .zshrc"
 cp .zshrc ~/
-echo "Don't forget to enable services for sddm and auto-cpufreq"
+echo "Enabling bluetooth"
+systemctl enable bluetooth
+echo "Move webcord theme"
+cp -r Webcord/themes ~/.config/Webcord/
 echo "Done script"
 
 exit
