@@ -9,7 +9,7 @@ yay -S catch2-git socat paru zsh brightnessctl cava gnome-keyring waybar-hyprlan
 webcord xed visual-studio-code-bin hyprpaper-git network-manager-applet auto-cpufreq grim-git slurp gtklock wofi alacritty \
 blueman pfetch unimatrix-git pipes.sh spicetify-cli catppuccin-gtk-theme-mocha sddm-git zsh-autosuggestions zsh-syntax-highlighting-git xreader \
 xviewer xplayer xdg-desktop-portal-wlr ttf-ubuntumono-nerd ttf-dejavu ttf-bitstream-vera noto-fonts cantarell-fonts \
-otf-font-awesome starship ttf-firacode-nerd wlogout github-cli --noconfirm
+otf-font-awesome starship ttf-firacode-nerd wlogout github-cli ttf-twemoji --noconfirm
 
 #optional iwgtk light ripgrep bc gojq blueberry
 #spotify spotify-adblock spotify-remove-ad-banner
@@ -90,6 +90,9 @@ echo "Enabling bluetooth"
 systemctl enable bluetooth
 echo "Move webcord theme"
 cp -r Webcord/themes ~/.config/Webcord/
+echo "Enabling emojis"
+mkdir ~/.config/fontconfig
+cp fonts.conf ~/.config/fontconfig/
 echo "Done script"
 
 exit
