@@ -63,9 +63,6 @@ rm -rf sddm
 echo "Enabling auto-cpufreq"
 sudo systemctl enable auto-cpufreq
 sudo systemctl start auto-cpufreq
-echo "Installing catppuccin zsh syntax highlighting"
-git clone https://github.com/catppuccin/zsh-syntax-highlighting.git
-cp -v zsh-syntax-highlighting/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh ~/.zsh/
 echo "Removing zsh syntax theme".config/alacritty/catppuccin
 rm -rf zsh-syntax-highlighting
 echo "Getting spotifywm"
