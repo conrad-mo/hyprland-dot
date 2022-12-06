@@ -71,8 +71,9 @@ echo "Building spotifywm"
 make -C ~/Github/spotifywm/
 echo "Moving starship config"
 cp starship.toml ~/.config/
-echo "Move vscode wayland flags"
+echo "Move electron wayland flags"
 cp code-flags.conf ~/.config/
+cp electron-flags.conf ~/.config/
 echo "Move wlogout config"
 cp -r wlogout ~/.config/
 echo "Grabbing catppuccin zsh syntax highlighting"
