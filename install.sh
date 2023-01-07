@@ -44,7 +44,7 @@ echo "Setting grub theme"
 git clone https://github.com/catppuccin/grub.git
 sudo cp -r grub/src/* /usr/share/grub/themes/
 sudo cp grub-config/grub /etc/default/
-sudo grub-mkconfig -o /boot/grub/grub.cfg
+sudo dracut-rebuild
 echo "Removing catppuccin grub repo"
 rm -rf grub
 echo "Moving SDDM dots"
