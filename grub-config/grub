@@ -62,4 +62,4 @@ GRUB_DISABLE_SUBMENU=y
 # documentation on GRUB_DISABLE_OS_PROBER, if still want to enable this
 # functionality install os-prober and uncomment to detect and include other
 # operating systems.
-GRUB_DISABLE_OS_PROBER=false
+GRUB_DISABLE_OS_PROBER=true

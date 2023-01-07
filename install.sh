@@ -44,6 +44,7 @@ echo "Setting grub theme"
 git clone https://github.com/catppuccin/grub.git
 sudo cp -r grub/src/* /usr/share/grub/themes/
 sudo cp grub-config/grub /etc/default/
+sudo grub-mkconfig -o /boot/grub/grub.cfg
 sudo dracut-rebuild
 echo "Removing catppuccin grub repo"
 rm -rf grub
@@ -59,20 +60,21 @@ echo "Changing sddm resolution"
 sudo cp 10-monitor.conf /etc/X11/xorg.conf.d/
 echo "Removing sddm catppuccin"
 rm -rf sddm
-echo "Enabling auto-cpufreq"
-sudo systemctl enable auto-cpufreq
-sudo systemctl start auto-cpufreq
+#echo "Enabling auto-cpufreq"
+#sudo systemctl enable auto-cpufreq
+#sudo systemctl start auto-cpufreq
 echo "Removing zsh syntax theme".config/alacritty/catppuccin
 rm -rf zsh-syntax-highlighting
 echo "Getting spotifywm"
 git clone https://github.com/amurzeau/spotifywm.git ~/GitHub/spotifywm
 echo "Building spotifywm"
-make -C ~/Github/spotifywm/
+make -C ~/GitHub/spotifywm/
 echo "Moving starship config"
 cp starship.toml ~/.config/
 echo "Move electron wayland flags"
 cp code-flags.conf ~/.config/
 cp electron-flags.conf ~/.config/
+cp electron19-flags.conf ~/.config/
 echo "Move wlogout config"
 cp -r wlogout ~/.config/
 echo "Grabbing catppuccin zsh syntax highlighting"
@@ -86,10 +88,23 @@ cp .zshrc ~/
 echo "Enabling bluetooth"
 systemctl enable bluetooth
 echo "Move webcord theme"
-cp -r Webcord/themes ~/.config/Webcord/
+cp -r Webcord/Themes ~/.config/WebCord/
 echo "Enabling emojis"
 mkdir ~/.config/fontconfig
 cp fonts.conf ~/.config/fontconfig/
+echo "Spicetify Catppuccion"
+sudo chmod a+wr /opt/spotify
+sudo chmod a+wr /opt/spotify/Apps -R
+git clone https://github.com/catppuccin/spicetify
+cp -r spicetify/catppuccin-* ~/.config/spicetify/Themes/
+cp spicetify/js/* ~/.config/spicetify/Extensions/
+spicetify backup
+spicetify config current_theme catppuccin-mocha
+spicetify config color_scheme lavender
+spicetify config inject_css 1 replace_colors 1 overwrite_assets 1
+spicetify config extensions catppuccin-mocha.js
+spicetify apply
+sudo rm -rf spicetify
 echo "Done script"
 
 exit
