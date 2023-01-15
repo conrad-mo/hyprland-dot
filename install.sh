@@ -105,6 +105,8 @@ spicetify config inject_css 1 replace_colors 1 overwrite_assets 1
 spicetify config extensions catppuccin-mocha.js
 spicetify apply
 sudo rm -rf spicetify
+echo "Fix xdg shit just in case"
+yay -R xdg-desktop-portal-gtk xdg-desktop-portal-gnome --noconfirm
 echo "Done script"
 
 exit
