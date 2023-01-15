@@ -106,6 +106,7 @@ spicetify config extensions catppuccin-mocha.js
 spicetify apply
 sudo rm -rf spicetify
 echo "Fix xdg shit just in case"
+yay -S qt5-wayland --noconfirm
 yay -R xdg-desktop-portal-gtk xdg-desktop-portal-gnome --noconfirm
 echo "Done script"
 

@@ -6,6 +6,8 @@ export GPG_TTY=$(tty)
 SAVEHIST=1000  # Save most-recent 1000 lines
 HISTFILE=~/.zsh_history
 
+#alias cbuild='gcc -std=c99 -Wall'
+alias cbuild='~/csca48.sh'
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
