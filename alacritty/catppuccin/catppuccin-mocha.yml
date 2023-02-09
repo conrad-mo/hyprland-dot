@@ -9,7 +9,7 @@ colors:
     # Cursor colors
     cursor:
         text: "#1E1E2E" # base
-        cursor: "#B4BEFE" # rosewater
+        cursor: "#F5E0DC" # rosewater
     vi_mode_cursor:
         text: "#1E1E2E" # base
         cursor: "#B4BEFE" # lavender
@@ -38,7 +38,7 @@ colors:
     # Selection colors
     selection:
         text: "#1E1E2E" # base
-        background: "#B4BEFE" # rosewater
+        background: "#F5E0DC" # rosewater
 
     # Normal colors
     normal:

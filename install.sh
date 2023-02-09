@@ -27,7 +27,7 @@ echo "Moving wrappedh1.desktop"
 cp wrappedh1.desktop ~/.local/bin/
 cp wrappedh1.desktop /usr/share/wayland-sessions/
 echo "Setting background photo"
-cp nightstudyroom.jpg ~/Pictures/
+cp betterpiano.jpg ~/Pictures/
 echo "Moving alacritty dots"
 cp -r alacritty ~/.config/
 echo "Moving gtklock dots"
