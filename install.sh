@@ -9,7 +9,8 @@ yay -S catch2-git spotify socat paru zsh brightnessctl cava gnome-keyring waybar
 webcord xed visual-studio-code-bin hyprpaper-git network-manager-applet auto-cpufreq grim-git slurp gtklock wofi alacritty \
 blueman pfetch unimatrix-git pipes.sh spicetify-cli catppuccin-gtk-theme-mocha sddm-git zsh-autosuggestions zsh-syntax-highlighting-git xreader \
 xviewer xplayer xdg-desktop-portal-hyprland-git ttf-ubuntu-mono-nerd ttf-dejavu ttf-bitstream-vera noto-fonts cantarell-fonts \
-otf-font-awesome starship ttf-firacode-nerd wlogout github-cli ttf-twemoji spotify-adblock spotify-remove-ad-banner protonvpn-gui --noconfirm
+otf-font-awesome starship ttf-firacode-nerd wlogout github-cli ttf-twemoji spotify-adblock spotify-remove-ad-banner protonvpn-gui \
+folder-color-switcher nemo-python-git polkit-kde-agent --noconfirm
 
 #optional iwgtk light ripgrep bc gojq blueberry
 
@@ -83,6 +84,9 @@ mkdir ~/.zsh
 cp -v zsh-syntax-highlighting/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh ~/.zsh/
 echo "Changing gtk to dark mode"
 cp -r gtk-3.0 ~/.config/
+echo "Change system gtk to catppuccin lavender dark"
+gsettings set org.gnome.desktop.interface gtk-theme "Catppuccin-Mocha-Standard-Lavender-Dark"
+gsettings set org.gnome.desktop.wm.preferences theme "Catppuccin-Mocha-Standard-Lavender-Dark"
 echo "Moving .zshrc"
 cp .zshrc ~/
 echo "Enabling bluetooth"
