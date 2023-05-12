@@ -10,7 +10,7 @@ webcord xed visual-studio-code-bin hyprpaper-git network-manager-applet auto-cpu
 blueman pfetch unimatrix-git pipes.sh spicetify-cli catppuccin-gtk-theme-mocha sddm-git zsh-autosuggestions zsh-syntax-highlighting-git xreader \
 xviewer xplayer xdg-desktop-portal-hyprland-git ttf-ubuntu-mono-nerd ttf-dejavu ttf-bitstream-vera noto-fonts cantarell-fonts \
 otf-font-awesome starship ttf-firacode-nerd wlogout github-cli ttf-twemoji protonvpn-gui \
-folder-color-switcher nemo-python-git polkit-kde-agent  dunst --noconfirm
+folder-color-switcher nemo-python-git polkit-kde-agent dunst --noconfirm
 
 #optional iwgtk light ripgrep bc gojq blueberry
 
