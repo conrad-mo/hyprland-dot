@@ -85,8 +85,8 @@ cp -v zsh-syntax-highlighting/themes/catppuccin_mocha-zsh-syntax-highlighting.zs
 echo "Changing gtk to dark mode"
 cp -r gtk-3.0 ~/.config/
 echo "Change system gtk to catppuccin pink dark"
-gsettings set org.gnome.desktop.interface gtk-theme "Catppuccin-Mocha-Standard-Pink-Dark"
-gsettings set org.gnome.desktop.wm.preferences theme "Catppuccin-Mocha-Standard-Pink-Dark"
+gsettings set org.gnome.desktop.interface gtk-theme "Catppuccin-Mocha-Standard-Pink-dark"
+gsettings set org.gnome.desktop.wm.preferences theme "Catppuccin-Mocha-Standard-Pink-dark"
 echo "Moving .zshrc"
 cp .zshrc ~/
 echo "Enabling bluetooth"
