@@ -103,10 +103,9 @@ git clone https://github.com/catppuccin/spicetify
 cp -r spicetify/catppuccin-* ~/.config/spicetify/Themes/
 cp spicetify/js/* ~/.config/spicetify/Extensions/
 spicetify backup
-spicetify config current_theme catppuccin-mocha
-spicetify config color_scheme lavender
+spicetify config current_theme catppuccin
+spicetify config color_scheme mocha
 spicetify config inject_css 1 replace_colors 1 overwrite_assets 1
-spicetify config extensions catppuccin-mocha.js
 spicetify apply
 sudo rm -rf spicetify
 echo "Fix xdg shit just in case"
